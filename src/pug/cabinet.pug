@@ -1,0 +1,252 @@
+doctype html
+html(lang="ru")
+	head
+		include modules/head.pug
+	body
+		.content
+			include modules/header.pug
+
+			main
+				//- mobile menu
+				include modules/mobile-menu
+				//- hero
+				.breadcrumbs
+					.container
+						ul
+							li
+								a.active(href="index.html") Главная
+							li.breadcrumbs__line
+								span |
+							li
+								a Личный кабинет
+				.cabinet
+					.container
+						.cabinet__header
+							h2.title Личный кабинет
+							a.btn-border(href="index.html") На главную
+					.bg4
+					.container
+						.tabs-container
+							.tabs-container__tabs
+								a.btn-border.active Личные данные
+								a.btn-border История заказов
+								a.btn-border Адреса заказов
+							.tabs-container__content
+								.tabs-container__item.tabs-container__item--1.active
+									form(action="get")
+										ul
+											li
+												span.edit Изменить
+												input(type="text" placeholder="ФИО")
+											li
+												span.edit Изменить
+												input(type="text" placeholder="example@mail.ru")
+											li
+												span.edit Изменить
+												input(type="text" placeholder="+7 963 741 85 20")
+											li
+												span.edit Изменить
+												input(type="text" placeholder="IV20")
+											li
+												span.edit Изменить
+												input(type="password" placeholder="******")
+									a.btn-border(href="") Сохранить
+								.tabs-container__item.tabs-container__item--2
+									.tabs-container__item-info
+										ul.tabs-container__item-info-row.tabs-container__item-info-row--header
+											li
+												span № заказа
+											li
+												span Состояние
+											li
+												span Информация о заказе
+										ul.tabs-container__item-info-row
+											li
+												span.tabs-container__item-col-1 № 00258
+											li
+												a.pay Оплатить
+											li
+												.tabs-container__item-col-2.tabs-container__item-name-product-order
+													a.details Подробности заказа
+													.tabs-container__item-col-order-content
+														ul
+															li
+																div.group
+																	span.name Бананы Эквадор
+																	span 2000 г.
+																span.price 169
+															li
+																.group
+																	span.name Бананы Эквадор
+																	span 2000 г.
+																span.price 169	
+															li
+																.group
+																	span.name Бананы Эквадор
+																	span 2000 г.
+																span.price 169
+														.total
+															span Итог:
+															span 506 руб.
+										ul.tabs-container__item-info-row
+											li
+												span.tabs-container__item-col-1 № 00258
+											li
+												a.pay-finished Оплачено
+											li
+												.tabs-container__item-col-2.tabs-container__item-name-product-order
+													a.details Подробности заказа
+													.tabs-container__item-col-order-content
+														ul
+															li
+																.group
+																	span.name Бананы Эквадор
+																	span 2000 г.
+																span.price 169
+															li
+																.group
+																	span.name Бананы Эквадор
+																	span 2000 г.
+																span.price 169	
+															li
+																.group
+																	span.name Бананы Эквадор
+																	span 2000 г.
+																span.price 169
+														.total
+															span Итог:
+															span 506 руб.
+										ul.tabs-container__item-info-row
+											li
+												span.tabs-container__item-col-1 № 00258
+											li
+												a.pay-finished Оплачено
+											li
+												.tabs-container__item-col-2.tabs-container__item-name-product-order
+													a.details Подробности заказа
+													.tabs-container__item-col-order-content
+														ul
+															li
+																.group
+																	span.name Бананы Эквадор
+																	span 2000 г.
+																span.price 169
+															li
+																.group
+																	span.name Бананы Эквадор
+																	span 2000 г.
+																span.price 169	
+															li
+																.group
+																	span.name Бананы Эквадор
+																	span 2000 г.
+																span.price 169
+														.total
+															span Итог:
+															span 506 руб.
+										ul.tabs-container__item-info-row
+											li
+												span.tabs-container__item-col-1 № 00258
+											li
+												a.pay-finished Оплачено
+											li
+												.tabs-container__item-col-2.tabs-container__item-name-product-order
+													a.details Подробности заказа
+													.tabs-container__item-col-order-content
+														ul
+															li
+																.group
+																	span.name Бананы Эквадор
+																	span 2000 г.
+																span.price 169
+															li
+																.group
+																	span.name Бананы Эквадор
+																	span 2000 г.
+																span.price 169	
+															li
+																.group
+																	span.name Бананы Эквадор
+																	span 2000 г.
+																span.price 169
+														.total
+															span Итог:
+															span 506 руб.
+										ul.tabs-container__item-info-row
+											li
+												span.tabs-container__item-col-1 № 00258
+											li
+												a.pay-finished Оплачено
+											li
+												.tabs-container__item-col-2.tabs-container__item-name-product-order
+													a.details Подробности заказа
+													.tabs-container__item-col-order-content
+														ul
+															li
+																.group
+																	span.name Бананы Эквадор
+																	span 2000 г.
+																span.price 169
+															li
+																.group
+																	span.name Бананы Эквадор
+																	span 2000 г.
+																span.price 169	
+															li
+																.group
+																	span.name Бананы Эквадор
+																	span 2000 г.
+																span.price 169
+														.total
+															span Итог:
+															span 506 руб.
+										ul.tabs-container__item-info-row
+											li
+												span.tabs-container__item-col-1 № 00258
+											li
+												a.pay-finished Оплачено
+											li
+												.tabs-container__item-col-2.tabs-container__item-name-product-order
+													a.details Подробности заказа
+													.tabs-container__item-col-order-content
+														ul
+															li
+																.group
+																	span.name Бананы Эквадор
+																	span 2000 г.
+																span.price 169
+															li
+																.group
+																	span.name Бананы Эквадор
+																	span 2000 г.
+																span.price 169	
+															li
+																.group
+																	span.name Бананы Эквадор
+																	span 2000 г.
+																span.price 169
+														.total
+															span Итог:
+															span 506 руб.
+								.tabs-container__item.tabs-container__item--3
+									form(action="get")
+										ul
+											li
+												span.delete-row Удалить
+												input(type="text" placeholder="г. Курск, ул. Ленина, д. 15, кв. 102")
+											li
+												span.delete-row Удалить
+												input(type="text" placeholder="г. Курск, ул. Садовая, д. 105, кв. 2")
+											li
+												span.delete-row Удалить
+												input(type="text" placeholder="г. Курск, ул. Радищева, д. 5")
+				include modules/bottom-menu
+
+							
+
+
+
+
+			include modules/footer.pug
+			
+		include modules/script.pug

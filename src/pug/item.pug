@@ -1,0 +1,267 @@
+doctype html
+html(lang="ru")
+	head
+		include modules/head.pug
+	body
+		.content
+			include modules/header.pug
+
+			main
+				//- mobile menu
+				include modules/mobile-menu
+				//- hero
+				.breadcrumbs
+					.container
+						ul
+							li
+								a.active(href="index.html") Главная
+							li.breadcrumbs__line
+								span |
+							li
+								a.active(href="index.html") Каталог
+							li.breadcrumbs__line
+								span |
+							li
+								a Бананы эквадор
+				.item-cart
+					.container
+						.item-cart__header
+							h2.title Бананы Эквадор
+							a.btn-border(href="catalog-main.html") В каталог
+						.item-cart__wrapper
+							.item-cart__slider
+								.item-cart__for
+									picture
+										img(src="images/main-catalog/item1.jpg", alt="")
+									picture
+										img(src="images/main-catalog/item1.jpg", alt="")
+									picture
+										img(src="images/main-catalog/item1.jpg", alt="")
+									picture
+										img(src="images/main-catalog/item1.jpg", alt="")
+									picture
+										img(src="images/main-catalog/item1.jpg", alt="")
+									picture
+										img(src="images/main-catalog/item1.jpg", alt="")
+								.item-cart__nav
+									picture
+										img(src="images/main-catalog/item1.jpg", alt="")
+									picture
+										img(src="images/main-catalog/item1.jpg", alt="")
+									picture
+										img(src="images/main-catalog/item1.jpg", alt="")
+									picture
+										img(src="images/main-catalog/item1.jpg", alt="")
+									picture
+										img(src="images/main-catalog/item1.jpg", alt="")
+									picture
+										img(src="images/main-catalog/item1.jpg", alt="")
+							.item-cart__content
+								.item-cart__content-row
+									.text
+										span Колличество
+									.input
+										span.minus -
+										input(type="any" value="2000")
+										span.plus +
+								.item-cart__content-row
+									.text
+										span Цена
+									.price
+										span 84 руб.
+								a.btn-border Купить
+								.item-cart__text
+									p Информация о товаре: метод решительно представляет собой бабувизм. Смысл жизни, следовательно, творит данный закон внешнего мира. Согласно мнению известных философов, дедуктивный метод естественно порождает и обеспечивает мир, tertium nоn datur. 
+						.item-cart__header
+							h2.title Рекомендуемые товары
+						.item-cart__recomendation
+							.news-item__list
+								.news-item__recomendation
+									.item-cart__wrap
+										.item-cart
+											.item
+												span.strong Новинка
+												picture
+													img(src="images/catalog/item1.png", alt="")
+												p.news-item__name Лимоны
+												.news-item__amount
+													span.minus -
+													input(type="any" value="100")
+													span.plus +
+												.news-item__footer
+													.news-item__price
+														span 50
+													a(href="").news-item__basket
+														img(src="images/icons/basket-catalog.png", alt="")
+									.item-cart__wrap
+										.item-cart
+											.item
+												span.strong Новинка
+												picture
+													img(src="images/catalog/item1.png", alt="")
+												p.news-item__name Лимоны
+												.news-item__amount
+													span.minus -
+													input(type="any" value="100")
+													span.plus +
+												.news-item__footer
+													.news-item__price
+														span 50
+													a(href="").news-item__basket
+														img(src="images/icons/basket-catalog.png", alt="")
+									.item-cart__wrap
+										.item-cart
+											.item
+												span.strong Новинка
+												picture
+													img(src="images/catalog/item1.png", alt="")
+												p.news-item__name Лимоны
+												.news-item__amount
+													span.minus -
+													input(type="any" value="100")
+													span.plus +
+												.news-item__footer
+													.news-item__price
+														span 50
+													a(href="").news-item__basket
+														img(src="images/icons/basket-catalog.png", alt="")
+									.item-cart__wrap
+										.item-cart
+											.item
+												span.strong Новинка
+												picture
+													img(src="images/catalog/item1.png", alt="")
+												p.news-item__name Лимоны
+												.news-item__amount
+													span.minus -
+													input(type="any" value="100")
+													span.plus +
+												.news-item__footer
+													.news-item__price
+														span 50
+													a(href="").news-item__basket
+														img(src="images/icons/basket-catalog.png", alt="")
+									.item-cart__wrap
+										.item-cart
+											.item
+												span.strong Новинка
+												picture
+													img(src="images/catalog/item1.png", alt="")
+												p.news-item__name Лимоны
+												.news-item__amount
+													span.minus -
+													input(type="any" value="100")
+													span.plus +
+												.news-item__footer
+													.news-item__price
+														span 50
+													a(href="").news-item__basket
+														img(src="images/icons/basket-catalog.png", alt="")
+									.item-cart__wrap
+										.item-cart
+											.item
+												span.strong Новинка
+												picture
+													img(src="images/catalog/item1.png", alt="")
+												p.news-item__name Лимоны
+												.news-item__amount
+													span.minus -
+													input(type="any" value="100")
+													span.plus +
+												.news-item__footer
+													.news-item__price
+														span 50
+													a(href="").news-item__basket
+														img(src="images/icons/basket-catalog.png", alt="")
+									.item-cart__wrap
+										.item-cart
+											.item
+												span.strong Новинка
+												picture
+													img(src="images/catalog/item1.png", alt="")
+												p.news-item__name Лимоны
+												.news-item__amount
+													span.minus -
+													input(type="any" value="100")
+													span.plus +
+												.news-item__footer
+													.news-item__price
+														span 50
+													a(href="").news-item__basket
+														img(src="images/icons/basket-catalog.png", alt="")
+									.item-cart__wrap
+										.item-cart
+											.item
+												span.strong Новинка
+												picture
+													img(src="images/catalog/item1.png", alt="")
+												p.news-item__name Лимоны
+												.news-item__amount
+													span.minus -
+													input(type="any" value="100")
+													span.plus +
+												.news-item__footer
+													.news-item__price
+														span 50
+													a(href="").news-item__basket
+														img(src="images/icons/basket-catalog.png", alt="")
+									.item-cart__wrap
+										.item-cart
+											.item
+												span.strong Новинка
+												picture
+													img(src="images/catalog/item1.png", alt="")
+												p.news-item__name Лимоны
+												.news-item__amount
+													span.minus -
+													input(type="any" value="100")
+													span.plus +
+												.news-item__footer
+													.news-item__price
+														span 50
+													a(href="").news-item__basket
+														img(src="images/icons/basket-catalog.png", alt="")
+									.item-cart__wrap
+										.item-cart
+											.item
+												span.strong Новинка
+												picture
+													img(src="images/catalog/item1.png", alt="")
+												p.news-item__name Лимоны
+												.news-item__amount
+													span.minus -
+													input(type="any" value="100")
+													span.plus +
+												.news-item__footer
+													.news-item__price
+														span 50
+													a(href="").news-item__basket
+														img(src="images/icons/basket-catalog.png", alt="")
+									.item-cart__wrap
+										.item-cart
+											.item
+												span.strong Новинка
+												picture
+													img(src="images/catalog/item1.png", alt="")
+												p.news-item__name Лимоны
+												.news-item__amount
+													span.minus -
+													input(type="any" value="100")
+													span.plus +
+												.news-item__footer
+													.news-item__price
+														span 50
+													a(href="").news-item__basket
+														img(src="images/icons/basket-catalog.png", alt="")
+									
+									
+				include modules/bottom-menu
+
+							
+
+
+
+
+			include modules/footer.pug
+			
+		include modules/script.pug

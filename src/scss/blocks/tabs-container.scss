@@ -1,0 +1,254 @@
+.tabs-container {
+	display: flex;
+	justify-content: space-between;
+	@media (max-width: 768px) {
+		flex-direction: column;
+	}
+}
+
+.tabs-container__tabs {
+	display: flex;
+	flex-direction: column;
+	flex: 1 0 240px;
+	max-width: 250px;
+	.btn-border {
+		cursor: pointer;
+		text-transform: uppercase;
+		border: none;
+		background-image: none;
+		align-self: flex-start;
+		width: 100%;
+		border-top: 1px solid transparent;
+		border-bottom: 1px solid transparent;
+
+		&.active {
+			border-top: 1px solid #262626;
+			border-bottom: 1px solid #262626;
+			background-image: url("../images/icons/arrow.svg");
+		}
+		&:hover {
+			color: $color-hover;
+		}
+		@media (max-width: 1024px) {
+			padding-right: 40px;
+		}
+	}
+	@media (max-width: 1024px) {
+		max-width: 200px;
+	}
+	@media (max-width: 768px) {
+		margin-bottom: 70px;
+		width: 100%;
+		flex: auto;
+	}
+}
+
+.tabs-container__content {
+	// max-width: 1000px;
+	// width: 100%;
+	width: 70%;
+	@media (max-width: 768px) {
+		width: 100%;
+	}
+}
+
+.tabs-container__item {
+	display: none;
+	&.active {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&--1 {
+		form {
+			margin-bottom: 50px;
+		}
+		ul {
+			display: flex;
+			flex-direction: column;
+			li {
+				position: relative;
+				margin-bottom: 20px;
+				.edit {
+					position: absolute;
+					right: 0;
+					top: 50%;
+					transform: translateY(-50%);
+					text-decoration: underline;
+					font-size: 15px;
+					font-weight: 400;
+					color: #d7d2cb;
+					cursor: pointer;
+				}
+			}
+			input {
+				border: none;
+				padding: 10px 20px;
+				border-bottom: 1px solid #d7d2cb;
+				width: 100%;
+				@media (max-width: 1024px) {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+	&--3 {
+		form {
+			margin-bottom: 50px;
+		}
+		ul {
+			display: flex;
+			flex-direction: column;
+			li {
+				position: relative;
+				margin-bottom: 20px;
+				.delete-row {
+					position: absolute;
+					right: 0;
+					top: 50%;
+					transform: translateY(-50%);
+					text-decoration: underline;
+					font-size: 15px;
+					font-weight: 400;
+					color: #d7d2cb;
+					cursor: pointer;
+				}
+			}
+			input {
+				border: none;
+				padding: 10px 20px;
+				border-bottom: 1px solid #d7d2cb;
+				width: 100%;
+				@media (max-width: 768px) {
+					font-size: 13px;
+				}
+			}
+		}
+	}
+}
+
+.tabs-container__item-info-header {
+	display: flex;
+	border-top: 1px solid #d7d2cb;
+	border-bottom: 1px solid #d7d2cb;
+	padding: 20px;
+}
+
+.tabs-container__item-info {
+	height: 420px;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 20px;
+	border-bottom: 1px solid #d7d2cb;
+	overflow: scroll;
+	@media (max-width: 767px) {
+		padding: 0;
+	}
+}
+
+.tabs-container__item-info-row {
+	width: 100%;
+	display: flex;
+	margin-bottom: 30px;
+	padding: 0 20px;
+	& > li {
+		// width: calc(100% / 3);
+		&:nth-child(1),
+		&:nth-child(2) {
+			flex: 1 0 150px;
+			max-width: 150px;
+			@media (max-width: 767px) {
+				flex: 1 0 100px;
+				max-width: 100%;
+			}
+		}
+		&:last-child {
+			flex: 1 0 auto;
+		}
+		.pay {
+			text-transform: uppercase;
+			text-decoration: underline;
+		}
+		&:nth-child(2) {
+			@media (max-width: 767px) {
+				display: none;
+			}
+		}
+	}
+	a.details {
+		font-size: 16px;
+		font-weight: 400;
+		color: #d7d2cb;
+		text-decoration: underline;
+		@media (max-width: 767px) {
+			font-size: 14px;
+		}
+	}
+	&--header {
+		border-top: 1px solid #d7d2cb;
+		border-bottom: 1px solid #d7d2cb;
+		padding: 30px 20px;
+		@media (max-width: 767px) {
+			padding: 20px 0;
+			font-size: 13px !important;
+		}
+	}
+	@media (max-width: 767px) {
+		padding: 20px 0;
+		margin-bottom: 0;
+		font-size: 14px;
+	}
+}
+
+.tabs-container__item-name-product-order {
+	flex: 1 0 auto;
+	display: flex;
+	flex-direction: column;
+	a {
+		display: block;
+		cursor: pointer;
+	}
+}
+
+.tabs-container__item-col-order-content {
+	display: none;
+	&.active {
+		display: block;
+	}
+	ul {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 30px;
+		li {
+			display: flex;
+			padding: 10px 0;
+			flex-wrap: wrap;
+
+			.price {
+				width: 100px;
+				text-align: right;
+				@media (max-width: 1024px) {
+					width: auto;
+				}
+				@media (max-width: 767px) {
+					width: auto;
+				}
+			}
+		}
+	}
+	.total {
+		display: flex;
+		justify-content: space-between;
+		font-size: 18px;
+		font-weight: 500;
+	}
+	.group {
+		display: flex;
+		justify-content: space-between;
+		flex: 1 0 auto;
+		@media (max-width: 1024px) {
+			flex-direction: column;
+			justify-content: flex-start;
+		}
+	}
+}

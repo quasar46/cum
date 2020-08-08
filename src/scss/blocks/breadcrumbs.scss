@@ -1,0 +1,28 @@
+.breadcrumbs {
+    margin-bottom: 90px;
+    margin-top: 20px;
+    ul {
+        display: flex;
+        font-size: 12px;
+        font-weight: 400;
+        a {
+            font-size: 12px;
+            @media (max-width: 1024px) {
+                font-size: 10px;
+            }
+        }
+        a.active,
+        span {
+            color: #d7d2cb;
+            font-size: 12px;
+            font-weight: 400;
+            text-decoration: none;
+        }
+        span {
+            margin: 0 10px;
+        }
+    }
+    @media(max-width: 320px) {
+        margin-bottom: 50px;
+    }
+}

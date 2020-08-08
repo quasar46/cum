@@ -1,0 +1,39 @@
+a.btn-border {
+    font-size: 16px;
+    font-weight: 500;
+    border-top: 1px solid #262626;
+    border-bottom: 1px solid #262626;
+    align-self: flex-end;
+    padding: 20px;
+    padding-right: 65px;
+    text-decoration: none;
+    color: $color-text;
+    background-image: url("../images/icons/arrow.svg");
+    background-size: 30px 12px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    text-transform: uppercase;
+    cursor: pointer;
+    &:hover {
+        color: $color-hover;
+    }
+    &--mode {
+        background-image: none;
+        border: none;
+    }
+    @media (max-width: 1024px) {
+        font-size: 14px;
+        padding: 15px 20px;
+        padding-right: 60px;
+        background-size: 25px 10px;
+    }
+    @media (max-width: 768px) {
+        background-size: 25px auto;
+    }
+    @media (max-width: 767px) {
+        font-size: 12px;
+        padding: 10px 15px;
+        padding-right: 45px;
+        background-size: 20px 8px;
+    }
+}

@@ -1,0 +1,97 @@
+.contacts {
+    margin-bottom: 110px;
+    .bg3 {
+        height: 400px;
+        background-image: url("../images/backgrounds/bg3.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 70px;
+        @media (max-width: 1024px) {
+            height: 250px;
+            margin-bottom: 50px;
+        }
+    }
+    @media (max-width: 320px) {
+        margin-bottom: 100px;
+    }
+}
+
+.contacts__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+    h2 {
+        font-size: 50px;
+        font-weight: 500;
+        @media (max-width: 1024px) {
+            font-size: 40px;
+        }
+        @media (max-width: 767px) {
+            font-size: 25px;
+        }
+    }
+    .btn-border {
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+    @media (max-width: 1024px) {
+        margin-bottom: 30px;
+    }
+}
+
+.contacts__content {
+    margin-bottom: 70px;
+    @media (max-width: 1024px) {
+        margin-bottom: 60px;
+    }
+    @media (max-width: 767px) {
+        margin-bottom: 40px;
+    }
+}
+
+.contacts__list {
+    display: flex;
+    flex-direction: column;
+    p {
+        font-size: 18px;
+        font-weight: 400;
+        color: #404040;
+        margin-bottom: 10px;
+        @media (max-width: 1024px) {
+            font-size: 16px;
+        }
+        @media (max-width: 767px) {
+            font-size: 13px;
+        }
+    }
+    .up {
+        font-size: 60px;
+        font-weight: 500;
+        text-decoration: none;
+        color: $color-text;
+        @media (max-width: 1024px) {
+            font-size: 40px;
+        }
+        @media (max-width: 767px) {
+            font-size: 25px;
+        }
+    }
+}
+
+.contacts__item {
+    margin-bottom: 30px;
+    a {
+        &:hover {
+            color: $color-hover;
+            svg {
+                fill: $color-hover;
+            }
+        }
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

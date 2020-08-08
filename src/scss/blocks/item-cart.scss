@@ -1,0 +1,137 @@
+.item-cart__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 30px;
+	h2 {
+		font-size: 50px;
+		font-weight: 500;
+		@media (max-width: 768px) {
+			font-size: 40px;
+		}
+		@media (max-width: 767px) {
+			font-size: 25px;
+		}
+	}
+	.btn-border {
+		@media (max-width: 767px) {
+			display: none;
+		}
+	}
+}
+.item-cart__wrapper {
+	border-top: 1px solid #d7d2cb;
+	border-bottom: 1px solid #d7d2cb;
+	display: flex;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-bottom: 100px;
+
+	.item-cart__for {
+		width: 576px;
+		@media (max-width: 1024px) {
+			width: 346px;
+		}
+		@media (max-width: 769px) {
+		}
+		@media (max-width: 767px) {
+			flex-direction: column;
+			width: 225px;
+		}
+	}
+	.item-cart__nav {
+		flex: 1 0 120px;
+		max-width: 120px;
+		margin-right: 100px;
+		.slick-current {
+			border: 1px solid #d7d2cb;
+		}
+		@media (max-width: 768px) {
+			flex: 1 0 310px;
+			max-width: 310px;
+			margin-right: 0;
+		}
+		@media (max-width: 767px) {
+			flex: 1 0 48px;
+			max-width: 48px;
+			margin-right: 0;
+		}
+	}
+	@media (max-width: 767px) {
+		flex-direction: column;
+		border-bottom: 0;
+	}
+}
+
+.item-cart__content {
+	display: flex;
+	flex-direction: column;
+	.btn-border {
+		margin-bottom: 50px;
+		align-self: flex-start;
+	}
+}
+
+.item-cart__content-row {
+	display: flex;
+	align-items: center;
+	margin-bottom: 30px;
+	max-width: 300px;
+	width: 100%;
+	.input {
+		margin-left: auto;
+		span {
+			color: #d7d2cb;
+		}
+		input {
+			margin: 0 5px;
+			width: 78px;
+			border: 1px solid #d7d2cb;
+			text-align: center;
+			@media (max-width: 767px) {
+				font-size: 13px;
+			}
+		}
+	}
+	.price {
+		margin-left: auto;
+		font-size: 30px;
+		@media (max-width: 767px) {
+			font-size: 23px;
+		}
+	}
+	.text {
+		span {
+			font-size: 18px;
+			@media (max-width: 767px) {
+				font-size: 13px;
+			}
+		}
+	}
+}
+
+.item-cart__text {
+	font-size: 18px;
+	line-height: 1.5;
+	@media (max-width: 768px) {
+		font-size: 16px;
+	}
+	@media (max-width: 767px) {
+		font-size: 13px;
+	}
+}
+
+.item-cart__slider {
+	display: flex;
+	@media (max-width: 768px) {
+		flex-direction: column;
+		margin-right: 30px;
+	}
+	@media (max-width: 767px) {
+		flex-direction: row;
+	}
+}
+
+.item-cart__recomendation {
+	margin-bottom: 120px;
+}

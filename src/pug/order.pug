@@ -1,0 +1,323 @@
+doctype html
+html(lang="ru")
+	head
+		include modules/head.pug
+	body
+		.content
+			include modules/header.pug
+
+			main
+				//- mobile menu
+				include modules/mobile-menu
+				//- hero
+				.breadcrumbs
+					.container
+						ul
+							li
+								a.active(href="index.html") Главная
+							li.breadcrumbs__line
+								span |
+							li
+								a Ваш заказ
+				.order
+					.container
+						.order__header
+							h2.title Ваш заказ
+							a.btn-border(href="catalog-main.html") В каталог
+					.bg5
+					.container
+						//- order content 1
+						.order-content.order-content--1.active
+							table.order-content-1__table
+								thead
+									tr
+										td.number №
+										td Наименование товара
+										td Колличество
+										td.price-top Цена
+										td Стоимость
+										td Удалить
+								tbody
+									tr
+										td.group
+											.number 1
+											.picture
+												picture
+													img(src="images/catalog/item1.png", alt="")
+										td.name Бананы Эквадор
+										td
+											.news-item__amount
+												span.minus -
+												input(type="any" value="100")
+												span.plus +
+										td.price 84 <sup>90</sup>
+										td.cost 189 <sup>90</sup>
+										td.delete-row
+											img(src="images/icons/delete.png", alt="")
+									tr
+										td.group
+											.number 2
+											.picture
+												picture
+													img(src="images/catalog/item2.png", alt="")
+										td.name Бананы Эквадор
+										td
+											.news-item__amount
+												span.minus -
+												input(type="any" value="100")
+												span.plus +
+										td.price 84 <sup>90</sup>
+										td.cost 189 <sup>90</sup>
+										td.delete-row
+											img(src="images/icons/delete.png", alt="")
+									tr
+										td.group
+											.number 3
+											.picture
+												picture
+													img(src="images/catalog/item3.png", alt="")
+										td.name Бананы Эквадор
+										td
+											.news-item__amount
+												span.minus -
+												input(type="any" value="100")
+												span.plus +
+										td.price 84 <sup>90</sup>
+										td.cost 189 <sup>90</sup>
+										td.delete-row
+											img(src="images/icons/delete.png", alt="")
+							.order-content-1__table.order-content-1__table--mobile
+								.head
+									.head__left №
+									.head__right Информация о заказе
+								.content
+									.content__row
+										.content__left
+											span 1
+											span.picture
+												picture
+													img(src="images/catalog/item1.png", alt="")
+										.content__right
+											span.name Бананы Эквадор
+											.content__right-wrapper
+												.input
+													span.minus -
+													input(type="any" value="100")
+													span.plus +
+												.price-product
+													span 169
+										.delete
+											img(src="images/icons/delete.png", alt="")
+											
+									.content__row
+										.content__left
+											span 2
+											span.picture
+												picture
+													img(src="images/catalog/item1.png", alt="")
+										.content__right
+											span.name Бананы Эквадор
+											.content__right-wrapper
+												.input
+													span.minus -
+													input(type="any" value="100")
+													span.plus +
+												.price-product
+													span 169
+										.delete
+											img(src="images/icons/delete.png", alt="")
+									.content__row
+										.content__left
+											span 3
+											span.picture
+												picture
+													img(src="images/catalog/item1.png", alt="")
+										.content__right
+											span.name Бананы Эквадор
+											.content__right-wrapper
+												.input
+													span.minus -
+													input(type="any" value="100")
+													span.plus +
+												.price-product
+													span 169
+										.delete
+											img(src="images/icons/delete.png", alt="")
+							.order-content--1__footer
+								ul
+									li
+										.col
+											span.footer-text Сумма заказа
+										.col
+											span.footer-number 406 руб.
+									li
+										.col
+											span.footer-text Доставка
+											span.footer-text.footer-text--mode ( Бесплатная доставка от 1000 руб. )
+										.col
+											span.footer-number 100 руб.
+									li
+										.col.total
+											span Итого:
+											span 506 руб.
+							a.btn-border.btn-next.btn-next--1 Продолжить
+						//- order content 2
+						.order-content.order-content--2
+							.order-content--2__wrapper
+								.order-content--2__left
+									.order-content--2__buttons
+										a.btn-border Вести данные
+										a.btn-border.btn-border--mode Войти в аккаунт
+									.order-content--2__current-order
+										h2 Текущий заказ
+										ul
+											li
+												.col-left
+													span.text Сумма заказа
+												.col-right
+													span.price 406 <sup>50</sup> руб.
+											li
+												.col-left
+													span Доставка:
+													span ( Бесплатная доставка от 1000 руб. )
+												.col-right
+													span 100 <sup>50</sup> руб.
+											li.total
+												.col-left
+													span Итого:
+												.col-right
+													span 506 <sup>50</sup> руб.
+
+								.order-content--2__right
+									.order-content-2__contacts
+										h2 Контактные данный
+										.order-content--2__contacts-inputs
+											input(type="text" placeholder="ФИО")
+											input(type="text" placeholder="почта")
+											input(type="text" placeholder="телефон")
+									.order-content--2__address
+										h2 Адрес доставки
+										.order-content--2__address-inputs
+											input(type="text" placeholder="Улица")
+											input(type="text" placeholder="Дом")
+											input(type="text" placeholder="Квартира")
+											input(type="text" placeholder="Домофон")
+									.order-content--2__payment
+										h2 Способы оплаты
+										.order-content--2__payment-wrapper
+											.order-content--2__payment-row
+												input#nal(type="checkbox")
+												label(for="nal") Наличными при получении
+											.order-content--2__payment-row
+												input#beznal(type="checkbox")
+												label(for="beznal") Онлайн - платеж
+									.order-content--2__comment
+										h2 Коментарий к заказу
+										input(type="text" placeholder="Введите коментарий")
+							.order-content--2__current-order.order-content--2__current-order--planshet
+										h2 Текущий заказ
+										ul
+											li
+												.col-left
+													span.text Сумма заказа
+												.col-right
+													span.price 406 <sup>50</sup> руб.
+											li
+												.col-left
+													span.text Доставка:
+													span.text ( Бесплатная доставка от 1000 руб. )
+												.col-right
+													span.price 100 <sup>50</sup>  руб.
+											li.total
+												.col-left
+													span Итого:
+												.col-right
+													span 506 <sup>50</sup> руб.
+							.order-content--2__buttons-footer
+								a.btn-border.btn-prev.btn-prev--2 Назад
+								a.btn-border.btn-next.btn-next--2 Продолжить
+						//- order content 3
+						.order-content.order-content--3
+							.order-content--3__finished
+								picture
+									img(src="images/icons/checkmark.svg", alt="")
+								h2 Благодарим Вас за заказ
+								p В ближайшее время с Вами свяжутся для уточнения информации о доставке
+							.order-content--3__description
+								h2 Заказ № <span id="number-order">0123456</span>
+								.order-content--3__wrapper
+									.order-content--3__left
+										ul.order-content--3__list
+											li
+												span.number 1
+												span.picture
+													picture
+														img(src="images/catalog/item1.png", alt="")
+												.group-wrapper
+													span.name Бананы Эквадор
+													.group
+														span.amount 2000 г.
+														span.price 169 <sup>60</sup>
+											li
+												span.number 2
+												span.picture
+													picture
+														img(src="images/catalog/item2.png", alt="")
+												.group-wrapper
+													span.name Хлеб ржаной Баварский
+													.group
+														span.amount 2000 г.
+														span.price 169 <sup>60</sup>
+											li
+												span.number 3
+												span.picture
+													picture
+														img(src="images/catalog/item3.png", alt="")
+												.group-wrapper
+													span.name Хлеб ржаной Покровский
+													.group
+														span.amount 2000 г.
+														span.price 169 <sup>60</sup>
+										.order-content--3__price
+											ul
+												li
+													.col
+														span.text Сумма заказа
+													.col
+														span.price 406 <sup>60</sup> руб.
+												li
+													.col
+														span.text Доставка
+														span.free ( Бесплатная доставка от 1000 руб. )
+													.col
+														span.price 100 <sup>60</sup> руб.
+												li
+													.col.total
+														span Итого:
+														span 506 <sup>60</sup> руб.
+									.order-content--3__right
+										h2 Данные для доставки
+										.order-content--3__right-wrapper
+											ul
+												li.title Контактная информация
+												li Иванов Иван Иванович
+												li ул. Ленина, д.10, кв 15
+												li +7 (912) 369 01 78
+											.group
+												ul
+													li.title Способ оплаты
+													li Наличными при получении
+												ul
+													li.title Коментарий к заказу
+													li Какой то коментарий написан тут будет
+
+				include modules/bottom-menu
+
+							
+
+
+
+
+			include modules/footer.pug
+			
+		include modules/script.pug

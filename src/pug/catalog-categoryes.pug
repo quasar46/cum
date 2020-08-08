@@ -1,0 +1,397 @@
+doctype html
+html(lang="ru")
+	head
+		include modules/head.pug
+	body
+		.content
+			include modules/header.pug
+
+			main
+				//- mobile menu
+				include modules/mobile-menu
+				//- filter categoryes
+				.menu-filter
+					.container
+						.menu-filter__wrapper
+							ul
+								li
+									a#menu-filter Категория товара
+								li
+									a Бренд производителя
+								li
+									a Страна производителя
+							.menu-filter__slide
+								span.first
+								span.second
+							.menu-filter__buttons
+								button Применить
+								button.drop1 Сбросить
+						.catalog-categoryes__category-row
+							h3 Бренд производителя
+							ul.catalog-categoryes__category-list
+								li
+									input#brend1(type="checkbox")
+									label(for="brend1") Бренд 1
+								li
+									input#brend2(type="checkbox")
+									label(for="brend2") Бренд 2
+								li
+									input#brend3(type="checkbox")
+									label(for="brend3") Бренд 3
+								li
+									input#brend4(type="checkbox")
+									label(for="brend4") Бренд 4
+						.catalog-categoryes__category-row
+							h3 Страна производителя
+							ul.catalog-categoryes__category-list
+								li
+									input#country1(type="checkbox")
+									label(for="country1") Страна 1
+								li
+									input#country2(type="checkbox")
+									label(for="country2") Страна 2
+								li
+									input#country3(type="checkbox")
+									label(for="country3") Страна 3
+								li
+									input#country4(type="checkbox")
+									label(for="country4") Страна 4
+							
+				//- menu categoryes
+				.menu-categoryes
+					a.title Категория товара
+					ul.catalog-categoryes__category-list
+						li
+							span.active.click-show Напитки
+							ul.catalog-categoryes__category-sublist
+								li
+									a(href="") Вода
+									a(href="") Чай, кофе
+									a(href="") Газированные напитки
+									a(href="") Категория 1
+									a(href="") Категория 2
+						li 
+							span.click-show Фрукты, овощи, зелень
+							ul.catalog-categoryes__category-sublist
+								li
+									a(href="") Вода
+									a(href="") Чай, кофе
+									a(href="") Газированные напитки
+									a(href="") Категория 1
+									a(href="") Категория 2
+						li 
+							span.click-show Мясо и птица
+							ul.catalog-categoryes__category-sublist
+								li
+									a(href="") Вода
+									a(href="") Чай, кофе
+									a(href="") Газированные напитки
+									a(href="") Категория 1
+									a(href="") Категория 2
+						li 
+							span.click-show Молоко и сыр
+							ul.catalog-categoryes__category-sublist
+								li
+									a(href="") Вода
+									a(href="") Чай, кофе
+									a(href="") Газированные напитки
+									a(href="") Категория 1
+									a(href="") Категория 2
+						li 
+							span.click-show Хлеб, выпечка
+							ul.catalog-categoryes__category-sublist
+								li
+									a(href="") Вода
+									a(href="") Чай, кофе
+									a(href="") Газированные напитки
+									a(href="") Категория 1
+									a(href="") Категория 2
+						li 
+							span.click-show Собственное производство
+							ul.catalog-categoryes__category-sublist
+								li
+									a(href="") Вода
+									a(href="") Чай, кофе
+									a(href="") Газированные напитки
+									a(href="") Категория 1
+									a(href="") Категория 2
+					.menu-categoryes__buttons
+						button Применить
+						button.drop2 Сбросить
+				//- hero
+				.breadcrumbs
+					.container
+						ul
+							li
+								a.active(href="index.html") Главная
+							li.breadcrumbs__line
+								span |
+							li
+								a Каталог
+				.catalog-categoryes
+					.container
+						.catalog-categoryes__header
+							h2.title Каталог
+							a.btn-border(href="index.html") На главную
+						.catalog-categoryes__wrapper
+							//- filter
+							.catalog-categoryes__filter
+								a.catalog-categoryes__filter-link.active По алфовиту
+								a.catalog-categoryes__filter-link По возростанию
+							.catalog-categoryes__filter.catalog-categoryes__filter--mode
+								a.catalog-categoryes__filter-link.active Сортировка
+								a.catalog-categoryes__filter-link#all-categoryes Все категории
+							.catalog-categoryes__inner
+								//- category
+								.catalog-categoryes__category
+									.catalog-categoryes__category-row
+										h3 Категория товара
+										ul.catalog-categoryes__category-list
+											li
+												span.active.click-show Напитки
+												ul.catalog-categoryes__category-sublist
+													li
+														a(href="") Вода
+														a(href="") Чай, кофе
+														a(href="") Газированные напитки
+														a(href="") Категория 1
+														a(href="") Категория 2
+											li 
+												span.click-show Фрукты, овощи, зелень
+												ul.catalog-categoryes__category-sublist
+													li
+														a(href="") Вода
+														a(href="") Чай, кофе
+														a(href="") Газированные напитки
+														a(href="") Категория 1
+														a(href="") Категория 2
+											li 
+												span.click-show Мясо и птица
+												ul.catalog-categoryes__category-sublist
+													li
+														a(href="") Вода
+														a(href="") Чай, кофе
+														a(href="") Газированные напитки
+														a(href="") Категория 1
+														a(href="") Категория 2
+											li 
+												span.click-show Молоко и сыр
+												ul.catalog-categoryes__category-sublist
+													li
+														a(href="") Вода
+														a(href="") Чай, кофе
+														a(href="") Газированные напитки
+														a(href="") Категория 1
+														a(href="") Категория 2
+											li 
+												span.click-show Хлеб, выпечка
+												ul.catalog-categoryes__category-sublist
+													li
+														a(href="") Вода
+														a(href="") Чай, кофе
+														a(href="") Газированные напитки
+														a(href="") Категория 1
+														a(href="") Категория 2
+											li 
+												span.click-show Собственное производство
+												ul.catalog-categoryes__category-sublist
+													li
+														a(href="") Вода
+														a(href="") Чай, кофе
+														a(href="") Газированные напитки
+														a(href="") Категория 1
+														a(href="") Категория 2
+									.catalog-categoryes__category-row
+										h3 Бренд производителя
+										ul.catalog-categoryes__category-list
+											li
+												input#brend1(type="checkbox")
+												label(for="brend1") Бренд 1
+											li
+												input#brend2(type="checkbox")
+												label(for="brend2") Бренд 2
+											li
+												input#brend3(type="checkbox")
+												label(for="brend3") Бренд 3
+											li
+												input#brend4(type="checkbox")
+												label(for="brend4") Бренд 4
+									.catalog-categoryes__category-row
+										h3 Страна производителя
+										ul.catalog-categoryes__category-list
+											li
+												input#country1(type="checkbox")
+												label(for="country1") Страна 1
+											li
+												input#country2(type="checkbox")
+												label(for="country2") Страна 2
+											li
+												input#country3(type="checkbox")
+												label(for="country3") Страна 3
+											li
+												input#country4(type="checkbox")
+												label(for="country4") Страна 4
+								.catalog-categoryes__catalog
+									.news-item__list
+										ul
+											li
+												.item
+													span.strong Новинка
+													picture
+														img(src="images/catalog/item1.png", alt="")
+													p.news-item__name Лимоны
+													.news-item__amount
+														span.minus -
+														input(type="any" value="100")
+														span.plus +
+													.news-item__footer
+														.news-item__price
+															span 50
+														a(href="").news-item__basket
+															img(src="images/icons/basket-catalog.png", alt="")
+											li
+												.item
+													span.sale Акция
+													picture
+														img(src="images/catalog/item2.png", alt="")
+													p.news-item__name Хлеб цельнозерновой с семенами подсолнечника
+													.news-item__amount
+														span.minus -
+														input(type="any" value="100")
+														span.plus +
+													.news-item__footer
+														.news-item__price
+															span 50
+														a(href="").news-item__basket
+															img(src="images/icons/basket-catalog.png", alt="")
+											li
+												.item
+													span.strong Новинка
+													picture
+														img(src="images/catalog/item3.png", alt="")
+													p.news-item__name Лимоны
+													.news-item__amount
+														span.minus -
+														input(type="any" value="100")
+														span.plus +
+													.news-item__footer
+														.news-item__price
+															span 50
+														a(href="").news-item__basket
+															img(src="images/icons/basket-catalog.png", alt="")
+											li
+												.item
+													span.strong Новинка
+													picture
+														img(src="images/catalog/item4.png", alt="")
+													p.news-item__name Лимоны
+													.news-item__amount
+														span.minus -
+														input(type="any" value="100")
+														span.plus +
+													.news-item__footer
+														.news-item__price
+															span 50
+														a(href="").news-item__basket
+															img(src="images/icons/basket-catalog.png", alt="")
+											li
+												.item
+													span.strong Новинка
+													picture
+														img(src="images/catalog/item1.png", alt="")
+													p.news-item__name Лимоны
+													.news-item__amount
+														span.minus -
+														input(type="any" value="100")
+														span.plus +
+													.news-item__footer
+														.news-item__price
+															span 50
+														a(href="").news-item__basket
+															img(src="images/icons/basket-catalog.png", alt="")
+											li
+												.item
+													span.strong Новинка
+													picture
+														img(src="images/catalog/item2.png", alt="")
+													p.news-item__name Лимоны
+													.news-item__amount
+														span.minus -
+														input(type="any" value="100")
+														span.plus +
+													.news-item__footer
+														.news-item__price
+															span 50
+														a(href="").news-item__basket
+															img(src="images/icons/basket-catalog.png", alt="")
+											li
+												.item
+													span.strong Новинка
+													picture
+														img(src="images/catalog/item3.png", alt="")
+													p.news-item__name Лимоны
+													.news-item__amount
+														span.minus -
+														input(type="any" value="100")
+														span.plus +
+													.news-item__footer
+														.news-item__price
+															span 50
+														a(href="").news-item__basket
+															img(src="images/icons/basket-catalog.png", alt="")
+											li
+												.item
+													span.strong Новинка
+													picture
+														img(src="images/catalog/item4.png", alt="")
+													p.news-item__name Лимоны
+													.news-item__amount
+														span.minus -
+														input(type="any" value="100")
+														span.plus +
+													.news-item__footer
+														.news-item__price
+															span 50
+														a(href="").news-item__basket
+															img(src="images/icons/basket-catalog.png", alt="")
+											li
+												.item
+													span.strong Новинка
+													picture
+														img(src="images/catalog/item1.png", alt="")
+													p.news-item__name Лимоны
+													.news-item__amount
+														span.minus -
+														input(type="any" value="100")
+														span.plus +
+													.news-item__footer
+														.news-item__price
+															span 50
+														a(href="").news-item__basket
+															img(src="images/icons/basket-catalog.png", alt="")
+											li
+												.item
+													span.strong Новинка
+													picture
+														img(src="images/catalog/item1.png", alt="")
+													p.news-item__name Лимоны
+													.news-item__amount
+														span.minus -
+														input(type="any" value="100")
+														span.plus +
+													.news-item__footer
+														.news-item__price
+															span 50
+														a(href="").news-item__basket
+															img(src="images/icons/basket-catalog.png", alt="")
+
+				include modules/bottom-menu
+
+							
+
+
+
+
+			include modules/footer.pug
+			
+		include modules/script.pug

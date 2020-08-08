@@ -1,0 +1,161 @@
+doctype html
+html(lang="ru")
+	head
+		include modules/head.pug
+	body
+		.content
+			include modules/header.pug
+
+			main
+				//- mobile menu
+				include modules/mobile-menu
+				//- hero
+				.breadcrumbs
+					.container
+						ul
+							li
+								a.active(href="index.html") Главная
+							li.breadcrumbs__line
+								span |
+							li
+								a Поиск
+				.search
+					.container
+						.search__header
+							h2.title Поиск
+							a.btn-border(href="index.html") На главную
+						.search__enter
+							input(type="text" placeholder="Введите поисковый запрос")
+						.search__inner
+							h3.search__inner-title Найдено <span>8</span> совпадений:
+						ul.search__items
+							li.item-cart
+								.item
+									span.strong Новинка
+									picture
+										img(src="images/catalog/item1.png", alt="")
+									p.news-item__name Лимоны
+									.news-item__amount
+										span.minus -
+										input(type="text" placeholder="100 г.")
+										span.plus +
+									.news-item__footer
+										.news-item__price
+											span 50
+										a(href="").news-item__basket
+											img(src="images/icons/basket-catalog.png", alt="")
+							li.item-cart
+								.item
+									span.strong Новинка
+									picture
+										img(src="images/catalog/item2.png", alt="")
+									p.news-item__name Лимоны
+									.news-item__amount
+										span.minus -
+										input(type="text" placeholder="100 г.")
+										span.plus +
+									.news-item__footer
+										.news-item__price
+											span 50
+										a(href="").news-item__basket
+											img(src="images/icons/basket-catalog.png", alt="")
+							li.item-cart
+								.item
+									span.sale Акция
+									picture
+										img(src="images/catalog/item3.png", alt="")
+									p.news-item__name Лимоны
+									.news-item__amount
+										span.minus -
+										input(type="text" placeholder="100 г.")
+										span.plus +
+									.news-item__footer
+										.news-item__price
+											span 50
+										a(href="").news-item__basket
+											img(src="images/icons/basket-catalog.png", alt="")
+							li.item-cart
+								.item
+									span.strong Новинка
+									picture
+										img(src="images/catalog/item4.png", alt="")
+									p.news-item__name Лимоны
+									.news-item__amount
+										span.minus -
+										input(type="text" placeholder="100 г.")
+										span.plus +
+									.news-item__footer
+										.news-item__price
+											span 50
+										a(href="").news-item__basket
+											img(src="images/icons/basket-catalog.png", alt="")
+							li.item-cart
+								.item
+									span.strong Новинка
+									picture
+										img(src="images/catalog/item1.png", alt="")
+									p.news-item__name Лимоны
+									.news-item__amount
+										span.minus -
+										input(type="text" placeholder="100 г.")
+										span.plus +
+									.news-item__footer
+										.news-item__price
+											span 50
+										a(href="").news-item__basket
+											img(src="images/icons/basket-catalog.png", alt="")
+							li.item-cart
+								.item
+									span.strong Новинка
+									picture
+										img(src="images/catalog/item2.png", alt="")
+									p.news-item__name Лимоны
+									.news-item__amount
+										span.minus -
+										input(type="text" placeholder="100 г.")
+										span.plus +
+									.news-item__footer
+										.news-item__price
+											span 50
+										a(href="").news-item__basket
+											img(src="images/icons/basket-catalog.png", alt="")
+							li.item-cart
+								.item
+									span.strong Новинка
+									picture
+										img(src="images/catalog/item3.png", alt="")
+									p.news-item__name Лимоны
+									.news-item__amount
+										span.minus -
+										input(type="text" placeholder="100 г.")
+										span.plus +
+									.news-item__footer
+										.news-item__price
+											span 50
+										a(href="").news-item__basket
+											img(src="images/icons/basket-catalog.png", alt="")
+							li.item-cart
+								.item
+									span.strong Новинка
+									picture
+										img(src="images/catalog/item4.png", alt="")
+									p.news-item__name Лимоны
+									.news-item__amount
+										span.minus -
+										input(type="text" placeholder="100 г.")
+										span.plus +
+									.news-item__footer
+										.news-item__price
+											span 50
+										a(href="").news-item__basket
+											img(src="images/icons/basket-catalog.png", alt="")
+				include modules/bottom-menu
+
+							
+
+
+
+
+			include modules/footer.pug
+			
+		include modules/script.pug

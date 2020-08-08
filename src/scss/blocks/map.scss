@@ -1,0 +1,13 @@
+.map {
+	background-image: url("../images/backgrounds/map.jpg");
+	height: 400px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	@media (max-width: 1024px) {
+		height: 250px;
+	}
+	@media (max-width: 767px) {
+		height: 400px;
+	}
+}

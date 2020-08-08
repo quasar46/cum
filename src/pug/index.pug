@@ -1,0 +1,355 @@
+doctype html
+html(lang="ru")
+	head
+		include modules/head.pug
+	body
+		.content
+			include modules/header.pug
+
+			main
+				//- mobile menu
+				include modules/mobile-menu
+				//- hero
+				.hero
+					.container
+						.slick-hero__btns
+								button.arrow-prev
+								button.arrow-next
+						
+						//- numbre slide
+						.slides-numbers(style="display: block").slick
+							button.prev
+							span.active 1
+							i &nbsp; / &nbsp;
+							span.total
+							button.next
+						//- slider
+						.slick-hero
+							.slick-hreo__wrapper
+								.hero__content
+									h2.title Специальное летнее предложение
+									p Весь июнь приятные летние акции от ЦУМа
+									a(href="").btn-border Подробнее
+							.slick-hreo__wrapper
+								.hero__content
+									h2.title Специальное летнее предложение
+									p Весь июнь приятные летние акции от ЦУМа
+									a(href="").btn-border Подробнее
+							.slick-hreo__wrapper
+								.hero__content
+									h2.title Специальное летнее предложение
+									p Весь июнь приятные летние акции от ЦУМа
+									a(href="").btn-border Подробнее
+
+				//- assortiment
+				.assortiment
+					.container
+						.container-inner
+							.assortiment__content
+								h2.title Огромный ассортимент 
+									span Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, hic?
+								a(href="catalog-main.html").btn-border В каталог
+				//- news-item
+				.news-item
+					.container
+						h2.title Новинки
+						.news-item__btns-carousel
+							button.arrow-prev
+							button.arrow-next
+					.news-item__list
+						ul.news-item__slider
+							li.item-cart
+								.item
+									span.strong Новинка
+									picture
+										img(src="images/catalog/item1.png", alt="")
+									p.news-item__name Лимоны
+									.news-item__amount
+										span.minus -
+										input(type="any" value="100")
+										span.plus +
+									.news-item__footer
+										.news-item__price
+											span 50
+										a(href="").news-item__basket
+											img(src="images/icons/basket-catalog.png", alt="")
+							li.item-cart
+								.item
+									span.strong Новинка
+									picture
+										img(src="images/catalog/item2.png", alt="")
+									p.news-item__name Лимоны
+									.news-item__amount
+										span.minus -
+										input(type="any" value="100")
+										span.plus +
+									.news-item__footer
+										.news-item__price
+											span 50
+										a(href="").news-item__basket
+											img(src="images/icons/basket-catalog.png", alt="")
+							li.item-cart
+								.item
+									span.strong Новинка
+									picture
+										img(src="images/catalog/item3.png", alt="")
+									p.news-item__name Лимоны
+									.news-item__amount
+										span.minus -
+										input(type="any" value="100")
+										span.plus +
+									.news-item__footer
+										.news-item__price
+											span 50
+										a(href="").news-item__basket
+											img(src="images/icons/basket-catalog.png", alt="")
+							li.item-cart
+								.item
+									span.strong Новинка
+									picture
+										img(src="images/catalog/item4.png", alt="")
+									p.news-item__name Лимоны
+									.news-item__amount
+										span.minus -
+										input(type="any" value="100")
+										span.plus +
+									.news-item__footer
+										.news-item__price
+											span 50
+										a(href="").news-item__basket
+											img(src="images/icons/basket-catalog.png", alt="")
+							li.item-cart
+								.item
+									span.strong Новинка
+									picture
+										img(src="images/catalog/item1.png", alt="")
+									p.news-item__name Лимоны
+									.news-item__amount
+										span.minus -
+										input(type="any" value="100")
+										span.plus +
+									.news-item__footer
+										.news-item__price
+											span 50
+										a(href="").news-item__basket
+											img(src="images/icons/basket-catalog.png", alt="")
+							li.item-cart
+								.item
+									span.strong Новинка
+									picture
+										img(src="images/catalog/item2.png", alt="")
+									p.news-item__name Лимоны
+									.news-item__amount
+										span.minus -
+										input(type="any" value="100")
+										span.plus +
+									.news-item__footer
+										.news-item__price
+											span 50
+										a(href="").news-item__basket
+											img(src="images/icons/basket-catalog.png", alt="")
+							li.item-cart
+								.item
+									span.strong Новинка
+									picture
+										img(src="images/catalog/item3.png", alt="")
+									p.news-item__name Лимоны
+									.news-item__amount
+										span.minus -
+										input(type="any" value="100")
+										span.plus +
+									.news-item__footer
+										.news-item__price
+											span 50
+										a(href="").news-item__basket
+											img(src="images/icons/basket-catalog.png", alt="")
+							li.item-cart
+								.item
+									span.strong Новинка
+									picture
+										img(src="images/catalog/item4.png", alt="")
+									p.news-item__name Лимоны
+									.news-item__amount
+										span.minus -
+										input(type="any" value="100")
+										span.plus +
+									.news-item__footer
+										.news-item__price
+											span 50
+										a(href="").news-item__basket
+											img(src="images/icons/basket-catalog.png", alt="")
+							li.item-cart
+								.item
+									span.strong Новинка
+									picture
+										img(src="images/catalog/item1.png", alt="")
+									p.news-item__name Лимоны
+									.news-item__amount
+										span.minus -
+										input(type="any" value="100")
+										span.plus +
+									.news-item__footer
+										.news-item__price
+											span 50
+										a(href="").news-item__basket
+											img(src="images/icons/basket-catalog.png", alt="")
+							li.item-cart
+								.item
+									span.strong Новинка
+									picture
+										img(src="images/catalog/item1.png", alt="")
+									p.news-item__name Лимоны
+									.news-item__amount
+										span.minus -
+										input(type="any" value="100")
+										span.plus +
+									.news-item__footer
+										.news-item__price
+											span 50
+										a(href="").news-item__basket
+											img(src="images/icons/basket-catalog.png", alt="")
+							
+				//- advantages
+				.advantages
+					.container-inner
+						ul
+							li
+								h2 < 10 лет
+								p мы занимаемся продажами
+							li
+								h2 < 10 000
+								p довольных покупателей
+							li
+								h2 Уже 500
+								p поставщиков сотрудничает с нами
+							li
+								p Обслуживание на
+								h2 наивысшем
+									p уровне
+							li
+								h2 Только свежая
+								p продукция на полках нашего магазина
+							li
+								h2 Еще один
+								p плюс тут будет написан, а пока текст
+
+				//- catalog
+				.catalog
+					.container
+						h2.title Каталог
+						.catalog__btns-carousel
+							button.arrow-prev
+							button.arrow-next
+					.catalog__list
+						ul.catalog__slider
+							li
+								.item
+									picture
+										img(src="images/catalog/item1.png", alt="")
+									p.catalog__name Лимоны
+									.catalog__tegs
+										a(href="") Свежие фрукты 
+										a(href="") Замороженные фрукты 
+										a(href="") Ягоды 
+										a(href="") И еще 5 
+							li
+								.item
+									picture
+										img(src="images/catalog/item2.png", alt="")
+									p.catalog__name Лимоны
+									.catalog__tegs
+										a(href="") Свежие фрукты 
+										a(href="") Замороженные фрукты 
+										a(href="") Ягоды 
+										a(href="") И еще 5 
+							li
+								.item
+									picture
+										img(src="images/catalog/item3.png", alt="")
+									p.catalog__name Лимоны
+									.catalog__tegs
+										a(href="") Свежие фрукты 
+										a(href="") Замороженные фрукты 
+										a(href="") Ягоды 
+										a(href="") И еще 5 
+							li
+								.item
+									picture
+										img(src="images/catalog/item4.png", alt="")
+									p.catalog__name Лимоны
+									.catalog__tegs
+										a(href="") Свежие фрукты 
+										a(href="") Замороженные фрукты 
+										a(href="") Ягоды 
+										a(href="") И еще 5 
+							li
+								.item
+									picture
+										img(src="images/catalog/item1.png", alt="")
+									p.catalog__name Лимоны
+									.catalog__tegs
+										a(href="") Свежие фрукты 
+										a(href="") Замороженные фрукты 
+										a(href="") Ягоды 
+										a(href="") И еще 5 
+							li
+								.item
+									picture
+										img(src="images/catalog/item2.png", alt="")
+									p.catalog__name Лимоны
+									.catalog__tegs
+										a(href="") Свежие фрукты 
+										a(href="") Замороженные фрукты 
+										a(href="") Ягоды 
+										a(href="") И еще 5 
+							li
+								.item
+									picture
+										img(src="images/catalog/item3.png", alt="")
+									p.catalog__name Лимоны
+									.catalog__tegs
+										a(href="") Свежие фрукты 
+										a(href="") Замороженные фрукты 
+										a(href="") Ягоды 
+										a(href="") И еще 5 
+							li
+								.item
+									picture
+										img(src="images/catalog/item4.png", alt="")
+									p.catalog__name Лимоны
+									.catalog__tegs
+										a(href="") Свежие фрукты 
+										a(href="") Замороженные фрукты 
+										a(href="") Ягоды 
+										a(href="") И еще 5 
+							li
+								.item
+									picture
+										img(src="images/catalog/item1.png", alt="")
+									p.catalog__name Лимоны
+									.catalog__tegs
+										a(href="") Свежие фрукты 
+										a(href="") Замороженные фрукты 
+										a(href="") Ягоды 
+										a(href="") И еще 5 
+							li
+								.item
+									picture
+										img(src="images/catalog/item2.png", alt="")
+									p.catalog__name Лимоны
+									.catalog__tegs
+										a(href="") Свежие фрукты 
+										a(href="") Замороженные фрукты 
+										a(href="") Ягоды 
+										a(href="") И еще 5 
+				
+				include modules/bottom-menu
+
+							
+
+
+
+
+			include modules/footer.pug
+			
+		include modules/script.pug
